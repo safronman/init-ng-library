@@ -1,16 +1,28 @@
 import { NgModule } from '@angular/core';
-import { InLibComponent } from './in-lib.component';
+import { CommonModule } from '@angular/common';
 
+import { InLibComponent } from './in-lib.component';
+import { InAComponent } from './components/in-a/in-a.component';
+import { InBComponent } from './components/in-b/in-b.component';
+import { InCComponent } from './components/in-c/in-c.component';
 
 
 @NgModule({
   declarations: [
-    InLibComponent
+    InLibComponent,
+    InAComponent,
+    InBComponent,
+    InCComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
-    InLibComponent
+    InLibComponent,
+    InAComponent,
+    InBComponent,
+    InCComponent
   ]
 })
-export class InLibModule { }
+export class InLibModule {
+}

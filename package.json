@@ -7,6 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "---IN-LIB---": "--- IN-LIB: library---",
+    "build:in-lib": "ng build --watch",
     "---App-a---": "--- App-a aplication: test app---",
     "start:app-a": "ng serve app-a",
     "build:app-a": "ng build app-a",
