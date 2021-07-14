@@ -6,7 +6,16 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "---App-a---": "--- App-a aplication: default app---",
+    "start:app-a": "ng serve app-a",
+    "build:app-a": "ng build app-a",
+    "---App-b---": "--- App-b aplication: empty app---",
+    "start:app-b": "ng serve app-b",
+    "build:app-b": "ng build app-b",
+    "---App-c---": "--- App-c aplication: test app---",
+    "start:app-c": "ng serve app-c",
+    "build:app-c": "ng build app-c"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +32,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~12.1.1",
     "@angular/cli": "~12.1.1",
     "@angular/compiler-cli": "~12.1.1",
     "@types/jasmine": "~3.6.0",
@@ -33,6 +43,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^12.1.0",
     "typescript": "~4.3.2"
   }
 }

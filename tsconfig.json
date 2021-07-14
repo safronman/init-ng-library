@@ -8,6 +8,12 @@
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "in-lib": [
+        "dist/in-lib/in-lib",
+        "dist/in-lib"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
