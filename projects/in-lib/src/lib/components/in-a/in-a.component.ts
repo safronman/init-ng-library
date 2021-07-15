@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as _ from 'lodash';
+// @ts-ignore
+import cloneDeep from 'lodash/cloneDeep';
 
 
 interface IArr {
@@ -28,10 +29,8 @@ export class InAComponent implements OnInit {
     let arr2 = this.arr
     console.log('must return true', arr2 === this.arr)
 
-    let deepArr = _.cloneDeep(this.arr);
+    let deepArr = cloneDeep(this.arr);
     console.log('must return false', deepArr === this.arr)
-
-
   }
 
 
