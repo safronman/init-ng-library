@@ -1,4 +1,13 @@
-<h1>{{ title }}</h1>
-<in-a></in-a>
-<in-b></in-b>
-<in-c></in-c>
+<h1 style="text-align: center">{{ title }}</h1>
+<nav style="display: flex">
+  <ul>
+    <li><a routerLink="">Home</a></li>
+  </ul>
+  <ul>
+    <li><a routerLink="/catalog">Catalog</a></li>
+  </ul>
+  <ul>
+    <li><a routerLink="/cart">Cart</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
