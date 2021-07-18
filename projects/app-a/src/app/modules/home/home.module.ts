@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { InLibModule } from 'in-lib';
+
 import { HomeRoutingModule } from './home-routing.module';
 import { AppAHomePageComponent } from '../../components/app-a-home-page/app-a-home-page.component';
 
@@ -9,7 +11,8 @@ import { AppAHomePageComponent } from '../../components/app-a-home-page/app-a-ho
   declarations: [AppAHomePageComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    InLibModule
   ]
 })
 export class HomeModule {
