@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppAHomePageComponent } from './components/app-a-home-page/app-a-home-page.component';
-import { AppACatalogPageComponent } from './components/app-a-catalog-page/app-a-catalog-page.component';
-import { AppACartPageComponent } from './components/app-a-cart-page/app-a-cart-page.component';
-
 const routes: Routes = [
-  {path: '', component: AppAHomePageComponent, pathMatch: 'full'},
-  {path: 'catalog', component: AppACatalogPageComponent},
-  {path: 'cart', component: AppACartPageComponent},
+  {path: '', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)},
+  {path: 'catalog', loadChildren: () => import('./modules/catalog/catalog.module').then(m => m.CatalogModule)},
+  {path: 'cart', loadChildren: () => import('./modules/cart/cart.module').then(m => m.CartModule)},
 ];
 
 @NgModule({
