@@ -16,7 +16,7 @@
     "---App-b---": "--- App-b aplication: empty app---",
     "start:app-b": "ng serve app-b",
     "build:app-b": "ng build app-b",
-    "---App-c---": "--- App-c aplication: app by default---",
+    "---App-c---": "--- App-c aplication: split chunks---",
     "start:app-c": "ng serve app-c",
     "build:app-c": "ng build app-c"
   },
