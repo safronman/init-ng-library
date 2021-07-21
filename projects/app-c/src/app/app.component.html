@@ -7,6 +7,22 @@
 
 
 <div class="section-box">
-  <h2>Bundle size: empty application</h2>
+  <h2>1. Bundle size: empty application</h2>
   <img src="../assets/img/bundle-size-1.jpg" alt="bundle size">
+</div>
+
+<div class="section-box">
+  <h2>2. Bundle size: include one library</h2>
+  <p>Я создал в <b>in-lib</b>2 компонента. В компонент "in-a1" я ничего не добавил, практически пустой компонент.
+    А в компонент "in-b1" я добавил lodash. Затем я добавил в app.module.ts, который находится в приложении app-c
+    InA1Module. Т.е. логично было бы ожидать, что размер бандла не особо увиличится и библиотека lodash не будет
+    использоваться. Давайте посмотрим что получилось по итогу</p>
+  <in-a1></in-a1>
+  <img src="../assets/img/bundle-size-2.jpg" alt="bundle size">
+
+  <hr>
+  <p>Размер бандла увеличился на 90kb. Посмотрим кто в этом виноват.</p>
+  <p>Для поиска виновного установил <b>source-map-explorer</b></p>
+  <img src="../assets/img/source-map-1.jpg" alt="source map">
+  <p>Виновник <b>lodash</b>, но какого х**. Мы же этот компонент не используем даже в нашем приложении!!!</p>
 </div>
